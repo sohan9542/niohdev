@@ -5,7 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        pr:"#50A75D"
+        pr:"#50A75D",
+        sr:"#222423",
+        tr:"#F5D75C",
+        font:"#808080"
       }
     },
   },

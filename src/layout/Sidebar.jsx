@@ -24,7 +24,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr rounded-xl hover:text-gray-400 text-pr flex items-center px-3 gap-3"
-                : " w-full py-3 rounded-xl text-gray-500 hover:text-gray-400 flex items-center px-3 gap-3"
+                : " w-full py-3 rounded-xl text-font hover:text-gray-400 flex items-center px-3 gap-3"
             }
             to="/"
           >
@@ -35,7 +35,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr rounded-xl hover:text-gray-400 text-pr flex items-center px-3 gap-3"
-                : " w-full py-3 rounded-xl text-gray-500 hover:text-gray-400 flex items-center px-3 gap-3"
+                : " w-full py-3 rounded-xl text-font hover:text-gray-400 flex items-center px-3 gap-3"
             }
             to="/dashboard"
           >
@@ -46,7 +46,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr rounded-xl hover:text-gray-400 text-pr flex items-center px-3 gap-3"
-                : " w-full py-3 rounded-xl text-gray-500 hover:text-gray-400 flex items-center px-3 gap-3"
+                : " w-full py-3 rounded-xl text-font hover:text-gray-400 flex items-center px-3 gap-3"
             }
             to="/diplodocus"
           >
@@ -73,7 +73,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-yellow-400 hover:text-gray-400 rounded-xl text-yellow-400 flex items-center px-3 gap-3"
-                : " w-full py-3 rounded-xl text-gray-500 hover:text-gray-400 flex items-center px-3 gap-3"
+                : " w-full py-3 rounded-xl text-font hover:text-gray-400 flex items-center px-3 gap-3"
             }
             to="/t-regs"
           >
@@ -100,7 +100,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr rounded-xl hover:text-gray-400 text-pr flex items-center px-3 gap-3 pb-4"
-                : " w-full py-3 pb-4 rounded-xl text-gray-500 hover:text-gray-400 flex items-center px-3 gap-3"
+                : " w-full py-3 pb-4 rounded-xl text-font hover:text-gray-400 flex items-center px-3 gap-3"
             }
             to="/dino-camp"
           >
@@ -115,7 +115,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr hover:text-gray-400 rounded-xl text-pr flex items-center px-3 gap-3 pb-4"
-                : " w-full py-3 pb-4 rounded-xl text-gray-500 hover:text-gray-400 flex items-center px-3 gap-3"
+                : " w-full py-3 pb-4 rounded-xl text-font hover:text-gray-400 flex items-center px-3 gap-3"
             }
             to="/buy-camp"
           >
@@ -126,7 +126,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr hover:text-gray-400 rounded-xl text-pr flex items-center px-3 gap-3 pb-4"
-                : " w-full py-3 pb-4 rounded-xl text-gray-500 hover:text-gray-400 flex items-center px-3 gap-3"
+                : " w-full py-3 pb-4 rounded-xl text-font hover:text-gray-400 flex items-center px-3 gap-3"
             }
             to="/charts"
           >
@@ -137,7 +137,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr hover:text-gray-400 rounded-xl text-pr flex items-center px-3 gap-3 pb-4"
-                : " w-full py-3 pb-4 rounded-xl text-gray-500 hover:text-gray-400 flex items-center px-3 gap-3"
+                : " w-full py-3 pb-4 rounded-xl text-font hover:text-gray-400 flex items-center px-3 gap-3"
             }
             to="/newspaper"
           >
@@ -147,19 +147,19 @@ const Sidebar = () => {
           <div className=" w-full flex items-center justify-center gap-4 pt-3">
             <a
               href="https://facebook.com"
-              className=" text-gray-500 hover:text-gray-400"
+              className=" text-font hover:text-gray-400"
             >
               <AiOutlineTwitter className=" w-7 h-7" />
             </a>
             <a
               href="https://discord.com"
-              className=" text-gray-500 hover:text-gray-400"
+              className=" text-font hover:text-gray-400"
             >
               <FaDiscord className=" w-7 h-7" />
             </a>
             <a
               href="https://discord.com"
-              className=" text-gray-500 hover:text-gray-400"
+              className=" text-font hover:text-gray-400"
             >
               <CgNotes className=" w-7 h-7" />
             </a>
