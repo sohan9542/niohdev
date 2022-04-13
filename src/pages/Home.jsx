@@ -6,8 +6,8 @@ import dino2 from "../assets/images/dino2.png"
 import volc from "../assets/images/volc.png"
 const Home = () => {
   return (
-    <div className=" grid grid-cols-1 lg:grid-cols-2 relative px-8 h-screen overflow-hidden">
-      <div className=" pt-24 element_style">
+    <div className=" grid grid-cols-1 lg:grid-cols-2 relative p-2 lg:px-8 min-h-screen lg:h-screen overflow-hidden">
+      <div className=" pt-24 element_style z-40">
         <h1 className=" h1_font text-white font-bold">
           Gain passive income by leveraging 
           <span className=" text-pr"> Jurassic's</span> Financial protocol

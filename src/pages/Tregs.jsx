@@ -16,14 +16,16 @@ const Tregs = ({ color, name, img }) => {
       {change ? (
         <Diplodocus color={color} name={name} img={img} />
       ) : (
-        <div className=" min-h-screen w-full">
+        <div className=" min-h-screen w-full ">
           <img
             src={tunder}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
             alt=""
           />
 
+          <div className=" opacity-0">
           <ReactAudioPlayer src={raor} autoPlay controls />
+          </div>
         </div>
       )}
     </div>

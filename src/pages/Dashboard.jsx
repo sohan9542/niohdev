@@ -64,7 +64,7 @@ const Dashboard = () => {
         <h1 className=" element_style font-semibold text-white text-3xl text-center w-full">
           My data
         </h1>
-        <div className=" element_style my-10 w-full flex flex-col items-center justify-center  px-10">
+        <div className=" element_style my-10 w-full flex flex-col items-center justify-center px-5 lg:px-10">
           <div className="max_width  grid grid-cols-1 lg:grid-cols-3 gap-4 w-full px-3 lg:px-0">
             <div
               className=" rounded-xl  p-4"

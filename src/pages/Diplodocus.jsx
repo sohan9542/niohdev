@@ -5,7 +5,7 @@ const Diplodocus = ({ color, name, img }) => {
   return (
     <div className=" min-h-screen w-full">
       <div className=" pt-36 w-full">
-        <div className=" element_style w-full flex items-center flex-col justify-center">
+        <div className=" element_style w-full flex items-center flex-col justify-center p-5">
           <div className=" w-full max_width">
             <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div className={color ? " rounded-xl bounce_background overflow-hidden":"rounded-xl bounce_background1 overflow-hidden"}>
@@ -40,7 +40,7 @@ const Diplodocus = ({ color, name, img }) => {
                 </h5>
               </div>
             </div>
-            <div className=" rounded-xl bg-sr p-5 mt-5 gap-8 flex items-center">
+            <div className=" rounded-xl bg-sr p-5 mt-5 gap-8 flex items-center flex-wrap">
               <div>
                 <h1 className=" font-semibold text-3xl text-white">0</h1>
                 <p className=" text-font">All Diplo eggs</p>

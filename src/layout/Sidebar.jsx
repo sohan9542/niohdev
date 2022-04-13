@@ -8,9 +8,9 @@ import { RiBarChartFill } from "react-icons/ri";
 import { GiCampingTent } from "react-icons/gi";
 import { CgNotes } from "react-icons/cg";
 import { IoNewspaperOutline } from "react-icons/io5";
-const Sidebar = () => {
+const Sidebar = ({ setOpenSidebar}) => {
   return (
-    <div className=" text-white w_sidebar min-h-screen flex  justify-center">
+    <div className=" text-white w_sidebar bg-black min-h-screen flex  justify-center">
       <div className=" w_inner_sidebar">
         <div className=" mt-5 mb-9">
           <img
@@ -21,6 +21,7 @@ const Sidebar = () => {
         </div>
         <div className=" w-full flex items-center flex-col">
           <NavLink
+           onClick={()=>setOpenSidebar(true)}
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr rounded-xl hover:text-gray-400 text-pr flex items-center px-3 gap-3"
@@ -32,6 +33,7 @@ const Sidebar = () => {
             <AiFillHome className=" w-7 h-7" /> Home
           </NavLink>
           <NavLink
+           onClick={()=>setOpenSidebar(true)}
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr rounded-xl hover:text-gray-400 text-pr flex items-center px-3 gap-3"
@@ -43,6 +45,7 @@ const Sidebar = () => {
             <MdDashboard className=" w-7 h-7" /> Dashboard
           </NavLink>
           <NavLink
+           onClick={()=>setOpenSidebar(true)}
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr rounded-xl hover:text-gray-400 text-pr flex items-center px-3 gap-3"
@@ -70,6 +73,7 @@ const Sidebar = () => {
             Diplodocus eggs
           </NavLink>
           <NavLink
+           onClick={()=>setOpenSidebar(true)}
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-yellow-400 hover:text-gray-400 rounded-xl text-yellow-400 flex items-center px-3 gap-3"
@@ -97,6 +101,7 @@ const Sidebar = () => {
             T-Rex eggs
           </NavLink>
           <NavLink
+           onClick={()=>setOpenSidebar(true)}
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr rounded-xl hover:text-gray-400 text-pr flex items-center px-3 gap-3 pb-4"
@@ -112,6 +117,7 @@ const Sidebar = () => {
             className=" w-full bg-gray-500 my-2"
           ></div>
           <NavLink
+           onClick={()=>setOpenSidebar(true)}
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr hover:text-gray-400 rounded-xl text-pr flex items-center px-3 gap-3 pb-4"
@@ -123,6 +129,7 @@ const Sidebar = () => {
             <FaDollarSign className=" w-7 h-7" /> Buy $Dino
           </NavLink>
           <NavLink
+           onClick={()=>setOpenSidebar(true)}
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr hover:text-gray-400 rounded-xl text-pr flex items-center px-3 gap-3 pb-4"
@@ -134,6 +141,7 @@ const Sidebar = () => {
             <RiBarChartFill className=" w-7 h-7" /> Charts
           </NavLink>
           <NavLink
+           onClick={()=>setOpenSidebar(true)}
             className={({ isActive }) =>
               isActive
                 ? "w-full py-3 border border-pr hover:text-gray-400 rounded-xl text-pr flex items-center px-3 gap-3 pb-4"
