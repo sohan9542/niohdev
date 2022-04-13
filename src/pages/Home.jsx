@@ -10,7 +10,7 @@ const Home = () => {
       <div className=" pt-24 element_style">
         <h1 className=" h1_font text-white font-bold">
           Gain passive income by leveraging 
-          <span class=" text-pr"> Jurassic's</span> Financial protocol
+          <span className=" text-pr"> Jurassic's</span> Financial protocol
         </h1>
         <p className=" pt-8 text-gray-400">
           Jurassic Nodes is a new protocol on the Avalanche ecosystem. The price

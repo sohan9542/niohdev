@@ -5,10 +5,10 @@ const Diplodocus = ({ color, name, img }) => {
   return (
     <div className=" min-h-screen w-full">
       <div className=" pt-36 w-full">
-        <div className=" w-full flex items-center flex-col justify-center">
+        <div className=" element_style w-full flex items-center flex-col justify-center">
           <div className=" w-full max_width">
             <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4">
-              <div className=" rounded-xl bounce_background overflow-hidden">
+              <div className={color ? " rounded-xl bounce_background overflow-hidden":"rounded-xl bounce_background1 overflow-hidden"}>
                 {img}
               </div>
               <div className=" rounded-xl bg-sr p-5">
@@ -87,12 +87,12 @@ const Diplodocus = ({ color, name, img }) => {
                 </p>
               </div>
               <div>
-                <button className=" bg-font text-sm px-8 py-3 uppercase rounded-xl border border-pr text-white font-semibold">
+              <button className={color ? " bg-font text-sm px-8 py-3 uppercase rounded-xl border border-pr text-white font-semibold": " bg-font text-sm px-8 py-3 uppercase rounded-xl border border-tr text-white font-semibold"}>
                   Connect First
                 </button>
               </div>
             </div>
-            <div className=" rounded-xl bg-black p-5 border-2 border-pr mt-5 gap-3 flex items-center flex-col">
+            <div className={color ? " rounded-xl bg-black p-5 border-2 border-pr mt-5 gap-3 flex items-center flex-col": " rounded-xl bg-black p-5 border-2 border-tr mt-5 gap-3 flex items-center flex-col"}>
               <div>
                 <h1 className=" font-semibold text-2xl text-white">
                   Create Diplo eggs
@@ -102,32 +102,32 @@ const Diplodocus = ({ color, name, img }) => {
                 <h2 className=" text-gray-50">Name: </h2>
                 <input
                   type="text"
-                  className=" bg-transparent border-2 border-pr p-2 rounded-xl outline-none"
+                  className={color ? " bg-transparent border-2 border-pr p-2 rounded-xl outline-none": " bg-transparent border-2 border-tr p-2 rounded-xl outline-none"}
                 />
               </div>
               <div className=" flex items-center gap-4 my-3">
                 {count > 1 ? (
                   <button
                     onClick={() => setCount(count - 1)}
-                    className=" py-2 px-2 rounded-full text-white font-semibold bg-pr"
+                    className={color ? " py-2 px-2 rounded-full text-white font-semibold bg-pr": " py-2 px-2 rounded-full text-white font-semibold bg-tr"}
                   >
                     <AiOutlineMinus className="w-5 h-5" />
                   </button>
                 ) : (
-                  <button className=" py-2 px-2 rounded-full text-white font-semibold bg-pr">
+                  <button className={color ? " py-2 px-2 rounded-full text-white font-semibold bg-pr": " py-2 px-2 rounded-full text-white font-semibold bg-tr"}>
                     <AiOutlineMinus className="w-5 h-5" />
                   </button>
                 )}
                 <h1 className=" text-white font-semibold text-2xl">{count}</h1>
                 <button
                   onClick={() => setCount(count + 1)}
-                  className=" py-2 px-2 rounded-full text-white font-semibold bg-pr"
+                  className={color ? " py-2 px-2 rounded-full text-white font-semibold bg-pr": " py-2 px-2 rounded-full text-white font-semibold bg-tr"}
                 >
                   <AiOutlinePlus className="w-5 h-5" />
                 </button>
               </div>
               <div>
-                <button className=" bg-font text-sm px-8 py-3 uppercase rounded-xl border border-pr text-white font-semibold">
+                <button className={color ? " bg-font text-sm px-8 py-3 uppercase rounded-xl border border-pr text-white font-semibold": " bg-font text-sm px-8 py-3 uppercase rounded-xl border border-tr text-white font-semibold"}>
                   Connect First
                 </button>
               </div>

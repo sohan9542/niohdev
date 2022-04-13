@@ -154,6 +154,10 @@ body {
   background: radial-gradient(circle, rgb(52, 110, 37) 35%, rgb(103, 165, 100) 79%, rgb(114, 185, 111) 100%);
   animation: 1000ms ease 0s infinite normal none running glow;
 }
+.bounce_background1 {
+  background: radial-gradient(circle, rgb(201, 175, 66) 35%, rgb(245, 215, 92) 79%, rgb(255, 233, 142) 100%);
+  animation: 1000ms ease 0s infinite normal none running glow1;
+}
 
 
 
@@ -217,6 +221,15 @@ body {
 @keyframes glow {
   0% {
     box-shadow: rgb(79 165 92) 0px 0px 0px 0px;
+  }
+
+  100% {
+    box-shadow: rgb(79 165 92 / 0%) 0px 0px 0px 10px;
+  }
+}
+@keyframes glow1 {
+  0% {
+    box-shadow: rgb(245 215 92) 0px 0px 0px 0px;
   }
 
   100% {

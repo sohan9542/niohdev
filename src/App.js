@@ -5,6 +5,8 @@ import Dashboard from "./pages/Dashboard";
 import Diplodocus from "./pages/Diplodocus";
 import Home from "./pages/Home";
 import egg from "./assets/images/egg.png"
+import egg2 from "./assets/images/egg2.png"
+import Tregs from "./pages/Tregs";
 function App() {
   return (
     <div className="App bg-black min-h-screen text-white">
@@ -19,7 +21,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="diplodocus" element={<Diplodocus color={true} name="Diplodocus egg" img={ <img src={egg} alt="" />} />} />
-              <Route path="t-regs" element={<Diplodocus color={false} name="Diplodocus egg" img={ <img src={egg} alt="" />} />} />
+              <Route path="t-regs" element={<Tregs color={false} name="Diplodocus egg" img={ <img src={egg2} alt="" />} />} />
             </Routes>
           </div>
         </div>
